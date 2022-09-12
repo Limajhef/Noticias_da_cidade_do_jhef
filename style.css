@@ -275,4 +275,5 @@ h3 {
 	width: 750px;
 	margin: 0 auto;
 	color: var(--letra-rodape);
+	bottom: 0;
 }
