@@ -1,0 +1,278 @@
+/*<Painel de cores>*/
+:root { 
+    --imagemcidade: hsl(var(--hueprimario), 46%, 31%) url(../assets/fundo.png) repeat-x;
+    --background-navbar: url(../assets/detalhe-navbar.png) no-repeat right top;
+    --background-logo: url(../assets/logo.png) no-repeat center;
+    --navbar-divisor: url(../assets/divisor.png) no-repeat left center;
+    --background-caixa: #f3f3f3 url(../assets/fundo-caixa.png);
+    --background-lateralhover: #f9f9f9 url(../assets/marcador.png) no-repeat left center;
+
+    --hueprimario: 210;
+    --background-body: hsl(var(--hueprimario), 97%, 97%);
+    --background-imagemcidade: hsl(var(--hueprimario), 46%, 31%); 
+    --background-paragrafo2: hsl(var(--hueprimario), 46%, 31%);
+    --letra-paragrafo2: hsl(var(--hueprimario), 95%, 95%);
+    --background-caixaconteudo: hsl(var(--hueprimario), 95%, 95%);
+    --letra-lateral: hsl(var(--hueprimario), 5%, 5%);
+    --borda-lateral: hsl(var(--hueprimario), 95%, 95%);
+    --letra-listatitulo: hsl(var(--hueprimario), 50%, 50%);
+    --letra-listaparagrafo: hsl(var(--hueprimario), 5%, 5%);
+    --background-listahover: hsl(var(--hueprimario), 95%, 95%);
+    --background-rodape: hsl(var(--hueprimario), 46%, 31%);
+    --letra-rodape: hsl(var(--hueprimario), 95%, 95%);
+
+    --huesecundario: 345;
+    --navbar: hsl(var(--huesecundario), 93%, 36%);
+    --alink-visitado: hsl(var(--huesecundario), 93%, 36%);
+    --ahover: hsl(var(--huesecundario), 93%, 45%); 
+    --navbarhover: hsl(var(--huesecundario), 93%, 25%);
+    --letra-navbar: hsl(var(--huesecundario), 95%, 95%);
+    --background-titulocolorido: hsl(var(--huesecundario), 93%, 45%);
+    --letra-titulocolorido: hsl(var(--huesecundario), 95%, 95%);
+    --background-conteudo: hsl(var(--huesecundario), 95%, 95%);
+    --background-input: hsl(var(--huesecundario), 95%, 95%);
+    --background-inputsubmit: hsl(var(--huesecundario), 93%, 36%);
+    --borda-inputsubmit: hsl(var(--huesecundario), 93%, 25%);;
+    --borda-imagem: hsl(var(--huesecundario), 95%, 95%);
+    --background-destaque: hsl(var(--huesecundario), 93%, 36%);
+    --letra-destaque: hsl(var(--huesecundario), 95%, 95%);
+    --background-entrevista: hsl(var(--huesecundario), 93%, 36%);
+}
+/*</Painel de cores>*/
+
+* {
+	margin:0;
+	padding:0;
+}
+
+#imagemcidade {
+    background: var(--imagemcidade);
+    width: 100vw;
+    height: 240px;
+    position: absolute;
+    z-index: -1;
+    ;
+}
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: var(--background-body);
+    z-index: 1;
+}
+
+#container {
+	width: 750px;
+	margin: 0 auto;
+}
+
+#navbar {
+	height: 150px;
+	background: var(--background-navbar);
+	padding-top: 25px;
+}
+
+.logo {
+	width: 152px;
+	height: 66px;
+	background: var(--background-logo);
+	text-indent: -3000px;
+}
+
+a:link, a:visited {
+	color: var(--alink-visitado);
+	padding: 2px;
+}
+
+a:hover {
+	color: var(--ahover);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#navbar ul {
+	margin-top: 30px;
+	background: var(--navbar);
+	float: left;
+}
+
+#navbar ul li {
+	float: left;
+}
+
+#navbar ul a {
+	font-size: 0.9em;
+	display: block;
+	padding: 0.5em 1.5em;
+	line-height: 2.1em;
+	text-decoration: none;
+	color: var(--letra-navbar);
+	background: var(--navbar-divisor);
+}
+
+#navbar ul .primeiro a {
+	background: none;
+}
+
+#navbar ul a:hover {
+	color: var(--navbarhover);
+}
+
+/* Títulos em noticias*/
+body.home #navegacao a#home, body.brasil #navegacao a#brasil, body.internacional #navegacao a#internacional, body.fotos #navegacao a#fotos {
+	color: var(--letra-titulocolorido);
+	background: var(--background-titulocolorido);
+	cursor: text;
+}
+
+#conteudo {
+	margin-top: 60px;
+	background: var(--background-conteudo);
+}
+
+#lateral {
+	width: 180px;
+	float: left;
+	margin: 0 0 20px -750px;
+}
+
+#primario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 195px ;
+}
+
+#duas-colunas #primario {
+	width: 555px;
+}
+
+#uma-coluna #primario {
+	width: 750px;
+	margin: 0 0 20px 0;
+}
+
+#secundario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 15px;
+}
+
+.caixa {
+	margin: 10px 0;
+	padding: 5px;
+	background: var(--background-caixa);
+}
+
+h2 {
+	font-size: 1em;
+	background: var(--background-paragrafo2);
+	color: var(--letra-paragrafo2) ;
+	padding: 5px;
+}
+
+.caixa-conteudo {
+	background: var(--background-caixaconteudo);
+	padding: 5px;
+	margin-top: 5px;
+}
+
+#lateral ul a {
+	font-size: 0.9em;
+	padding: 3px;
+	display: block;
+	line-height: 30px;
+	color: var(--letra-lateral);
+	text-decoration: none;
+	border-bottom: 1px solid var(--borda-lateral);
+}
+
+#lateral ul a:hover {
+	background: var(--background-lateralhover);
+	padding-left: 20px;
+	color: #a1a1a1;
+}
+
+label {
+	display: block; 
+	cursor: pointer;
+}
+
+input {
+	padding: 5px;
+	width: 125px;
+	font-size: 0.9em;
+	background-color: var(--background-input);
+}
+
+input.submit {
+	width: 80px;
+	color: #fff;
+	background-color: var(--background-inputsubmit);
+	border: 2px solid var(--borda-inputsubmit);
+}
+
+img.imagem-principal {
+	width: 98%;
+	border: 3px solid var(--borda-imagem);
+}
+
+h3 {
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+.destaque h3 {
+	background: var(--background-destaque);
+	color: var(--letra-destaque);
+}
+
+.entrevista h3 {
+	background: var(--background-entrevista);
+}
+
+#lista-noticias li {
+	padding: 2px;
+	border-bottom: 1px solid #ccc; 
+	height: 62px;
+}
+
+#lista-noticias li a img {
+	float: left;
+	margin: 5px;
+}
+
+#lista-noticias li a {
+	text-decoration: none;
+}
+
+#lista-noticias li a h3 {
+	font-size: 0.8em;
+	padding: 0;
+	color: var(--letra-listatitulo);
+}
+
+#lista-noticias li a p {
+	font-size: 0.7em;
+	color: var(--letra-listaparagrafo) ;
+}
+
+#lista-noticias li:hover {
+	background: var(--background-listahover);
+	cursor: pointer;
+}
+
+#container-rodape {
+	background: var(--background-rodape);
+	padding: 20px;
+}
+
+#rodape {
+	width: 750px;
+	margin: 0 auto;
+	color: var(--letra-rodape);
+}
