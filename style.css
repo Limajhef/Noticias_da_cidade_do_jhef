@@ -1,12 +1,12 @@
 /*<Painel de cores>*/
 :root { 
-    --background-navbar: url(./Assets/detalhe-navbar.png) no-repeat right top;
-    --background-logo: url(./Assets/logo.png) no-repeat center;
-    --navbar-divisor: url(./Assets/divisor.png) no-repeat left center;
+    --background-navbar: url(../Assets/detalhe-navbar.png) no-repeat right top;
+    --background-logo: url(../Assets/logo.png) no-repeat center;
+    --navbar-divisor: url(../Assets/divisor.png) no-repeat left center;
     --background-caixa: #f3f3f3 url(../Assets/fundo-caixa.png);
 
 	--hueprimario: 210;
-	--imagemcidade: hsl(var(--hueprimario), 46%, 31%) url(./Assets/fundo.png) repeat-x;
+	--imagemcidade: hsl(var(--hueprimario), 46%, 31%) url(../Assets/fundo.png) repeat-x;
 	--background-body: hsl(var(--hueprimario), 97%, 97%);
     --background-imagemcidade: hsl(var(--hueprimario), 46%, 31%); 
     --background-paragrafo2: hsl(var(--hueprimario), 46%, 31%);
