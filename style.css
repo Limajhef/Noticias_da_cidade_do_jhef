@@ -1,14 +1,13 @@
 /*<Painel de cores>*/
 :root { 
-    --imagemcidade: hsl(var(--hueprimario), 46%, 31%) url(../Assets/fundo.png) repeat-x;
     --background-navbar: url(../Assets/detalhe-navbar.png) no-repeat right top;
     --background-logo: url(../Assets/logo.png) no-repeat center;
     --navbar-divisor: url(../Assets/divisor.png) no-repeat left center;
     --background-caixa: #f3f3f3 url(../Assets/fundo-caixa.png);
-    --background-lateralhover: #f9f9f9 url(../Assets/marcador.png) no-repeat left center;
 
-    --hueprimario: 210;
-    --background-body: hsl(var(--hueprimario), 97%, 97%);
+	--hueprimario: 210;
+	--imagemcidade: hsl(var(--hueprimario), 46%, 31%) url(../Assets/fundo.png) repeat-x;
+	--background-body: hsl(var(--hueprimario), 97%, 97%);
     --background-imagemcidade: hsl(var(--hueprimario), 46%, 31%); 
     --background-paragrafo2: hsl(var(--hueprimario), 46%, 31%);
     --letra-paragrafo2: hsl(var(--hueprimario), 95%, 95%);
@@ -269,6 +268,7 @@ h3 {
 #container-rodape {
 	background: var(--background-rodape);
 	padding: 20px;
+	position: relative;
 }
 
 #rodape {
